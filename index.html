@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini Project RevoU</title>
+    
+    <!-- CSS EXTERNAL -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-    
+    <main>
+        <header>
+            <h1 class="text-3xl font-bold text-center mt-10">Welcome to My Mini Project</h1>
+            <p class="text-center mt-4">This is a simple project to demonstrate HTML, CSS, and JavaScript integration.</p>
+        </header>
+
+        <form>
+            <div>
+                <label for="todo-input" class="block text-sm font-medium text-gray-700 mt-6">Add Task</label>
+                <input type="text" id="todo-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your task here"> 
+            </div>
+
+            <div>
+                <label for="date-input" class="block text-sm font-medium text-gray-700 mt-4">Date</label>
+                <input type="date" id="date-input" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div>
+                <button type="button" class="px-[26px] py-[4px] rounded-[8px] bg-blue-500 text-white">+</button>
+            </div>
+        </form>
+
+        <section>
+            <div class="action-container pt-[16px] pb-[16px] px-[24px]">
+                <button class="px-[26px] py-[4px] rounded-[8px] bg-gray-500 text-white ">Filter</button>
+                <button class="px-[26px] py-[4px] rounded-[8px] bg-red-500 text-white ">Delete All</button>
+            </div>
+            <header>
+                <h2 class="text-2xl font-semibold text-center">To-Do List</h2>
+                <p class="text-center">Here are your tasks:</p>
+            </header>
+            <ul id="todo-list">
+                <li class="todo-item flex justify-between items-center bg-white p-4 mt-2 rounded-md shadow-sm">
+                    <span>Sample Task</span>
+                    <div>
+                        <button class="px-[10px] py-[2px] bg-green-500 text-white rounded-md">Edit</button>
+                        <button class="px-[10px] py-[2px] bg-red-500 text-white rounded-md">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

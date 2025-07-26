@@ -1,0 +1,24 @@
+main {
+    width: 50%;
+    height: 100vh;
+    justify-self: center;
+    align-self: center;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    border-bottom: 1px solid black;
+}
